@@ -12,4 +12,6 @@ def crypto_value():
     date = crypto.find('span', class_ = 'date_posted').span.text
 
 if __name__ == '__main__':
-		crypto_value()
+	crypto_value()
+	time_wait = 10
+	print(f'waiting time {time_wait} minutes')
