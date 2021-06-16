@@ -12,5 +12,4 @@ def crypto_value():
     date = crypto.find('span', class_ = 'date_posted').span.text
 
 if __name__ == '__main__':
-  while  True:
-    crypto_value()
+		crypto_value()
