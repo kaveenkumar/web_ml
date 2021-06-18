@@ -28,9 +28,10 @@ def crypto_value():
 		      
       print(f'File saved: {idx}')
 
+		      
 if __name__ == '__main__':
-  	while True:
-		crypto_value()
-		time_wait = 10
-		print(f'waiting time {time_wait} minutes')
-		time.sleep(time_wait * 60)
+  while True:
+    crypto_value()
+    time_wait = 10
+    print(f'waiting time {time_wait} minutes')
+    time.sleep(time_wait * 60)
