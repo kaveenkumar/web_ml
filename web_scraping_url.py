@@ -16,7 +16,17 @@ def crypto_value():
       crypto_name = crypto.find('h3', class_ = 'crypto'_n).text.replace(' ', '')
       crypto_price = crypto.find('span', class_ = 'crypto_p').text
       more_info = crypto.header.h2.a['href']
+	
+      if user_currency in crypto_name:
+        with open(f'logs/{idx}', 'w') as f:
+          f.write(f
+          """
+	  for date {date}, crypto {crypto_name.strip()} is trading at price {crypto_price.strip()}.
+	  """)
+
+          f.write(' ')
 		      
+      print(f'File saved: {idx}')
 
 if __name__ == '__main__':
   	while True:
